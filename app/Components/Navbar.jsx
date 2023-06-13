@@ -60,62 +60,68 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="p-[10px] h-[60px] w-full fixed left-0 top-0ease-in-out duration-300">
-      <ul className="flex justify-between ease-in-out duration-100">
-        <li>
-          <Link href="/">
-            <div className="flex gap-2 items-center justify-start">
-              <HomeIcon width={24} />
-              <span className="hidden sm:flex">Acceuil</span>
-            </div>
-          </Link>
-        </li>
-        <li>
-          <Link href="/">
-            <div className="flex gap-2 items-center justify-start">
-              <UserIcon width={24} />
-              <span className="hidden sm:flex">Profil</span>
-            </div>
-          </Link>
-        </li>
-        <li>
-          <Link href="/">
-            <div className="flex gap-2 items-center justify-start">
-              <DocumentArrowUpIcon width={24} />
-              <span className="hidden sm:flex">Publier</span>
-            </div>
-          </Link>
-        </li>
-        <li>
-          <Link href="/">
-            <div className="flex gap-2 items-center justify-start">
-              <BellAlertIcon width={24} />
-              <span className="hidden sm:flex">Notifications</span>
-            </div>
-          </Link>
-        </li>
-        <li>
-          <Link href="/">
-            {theme === 'dark' ? (
-              <button
-                className="flex gap-2 items-center justify-start"
-                onClick={() => setTheme('light')}
-              >
-                <SunIcon width={24} />
-                <span className="hidden sm:flex">Light Mode</span>
-              </button>
-            ) : (
-              <button
-                className="flex gap-2 items-center justify-start"
-                onClick={() => setTheme('dark')}
-              >
-                <MoonIcon width={24} />
-                <span className="hidden sm:flex">Dark Mode</span>
-              </button>
-            )}
-          </Link>
-        </li>
-      </ul>
+    <nav className="flex justify-between items-center p-[10px] h-[60px] w-full fixed left-0 top-0 shadow-md bg-2 lg:w-auto lg:h-[375px] lg:flex-col lg:justify-center lg:items-start lg:gap-[50px] lg:rounded-md lg:mx-[10px] lg:my-[calc(50vh-187.5px)] ">
+      <Link
+        href="/"
+        className="hover:text-[#4B9AD4] ease-in-out transition-all "
+      >
+        <div className="flex gap-2 items-center justify-start">
+          <HomeIcon width={24} />
+          <span className="hidden sm:flex">Acceuil</span>
+        </div>
+      </Link>
+
+      <Link
+        href="/"
+        className="hover:text-[#4B9AD4] ease-in-out transition-all "
+      >
+        <div className="flex gap-2 items-center justify-start">
+          <UserIcon width={24} />
+          <span className="hidden sm:flex">Profil</span>
+        </div>
+      </Link>
+      <Link
+        href="/"
+        className="hover:text-[#4B9AD4] ease-in-out transition-all "
+      >
+        <div className="flex gap-2 items-center justify-start">
+          <DocumentArrowUpIcon width={24} />
+          <span className="hidden sm:flex">Publier</span>
+        </div>
+      </Link>
+
+      <Link
+        href="/"
+        className="hover:text-[#4B9AD4] ease-in-out transition-all "
+      >
+        <div className="flex gap-2 items-center justify-start">
+          <BellAlertIcon width={24} />
+          <span className="hidden sm:flex">Notifications</span>
+        </div>
+      </Link>
+
+      <Link
+        href="/"
+        className="hover:text-[#4B9AD4] ease-in-out transition-all "
+      >
+        {theme === 'dark' ? (
+          <button
+            className="flex gap-2 items-center justify-start"
+            onClick={() => setTheme('light')}
+          >
+            <SunIcon width={24} />
+            <span className="hidden sm:flex">Light Mode</span>
+          </button>
+        ) : (
+          <button
+            className="flex gap-2 items-center justify-start"
+            onClick={() => setTheme('dark')}
+          >
+            <MoonIcon width={24} />
+            <span className="hidden sm:flex">Dark Mode</span>
+          </button>
+        )}
+      </Link>
     </nav>
   );
 };
