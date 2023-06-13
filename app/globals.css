@@ -5,6 +5,7 @@
 body {
   color: #242526;
   background-color: #fff;
+  height: 200vh;
 }
 input {
   background-color: #f0f2f5;
@@ -16,8 +17,8 @@ input {
 
 [data-theme='dark'] body {
   color: #fff;
-  background-color: #242526;
+  background-color: #1c1e21;
 }
 [data-theme='dark'] .bg-2 {
-  background-color: #1c1e21;
+  background-color: #bebec210;
 }

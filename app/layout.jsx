@@ -15,8 +15,12 @@ export default function RootLayout({ children }) {
     <html lang="fr">
       <body className={Noto.className}>
         <Providers>
-          <Navbar />
-          {children}
+          <div className="flex flex-col lg:flex-row">
+            <div className="lg:w-1/6">
+              <Navbar />
+            </div>
+            <div className="lg:w-5/6 mb-[60px]">{children}</div>
+          </div>
         </Providers>
       </body>
     </html>
