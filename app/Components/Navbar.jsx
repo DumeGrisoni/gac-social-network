@@ -1,5 +1,6 @@
 'use client';
 import { useState, useEffect } from 'react';
+import FriendsBar from './FriendsBar';
 import { useTheme } from 'next-themes';
 import Link from 'next/link';
 import {
@@ -91,7 +92,9 @@ const Navbar = () => {
           )}
         </Link>
       </nav>
-      <nav className="hidden"></nav>
+      <nav className="hidden lg:block">
+        <FriendsBar />
+      </nav>
     </div>
   );
 };
