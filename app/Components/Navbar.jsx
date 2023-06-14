@@ -11,39 +11,6 @@ import {
   BellAlertIcon,
 } from '@heroicons/react/24/solid';
 
-// const ThemeSwitcher = () => {
-//   const [mounted, setMounted] = useState(false);
-//   const { theme, setTheme } = useTheme();
-
-//   // useEffect only runs on the client, so now we can safely show the UI
-//   useEffect(() => {
-//     setMounted(true);
-//   }, []);
-
-//   if (!mounted) {
-//     return null;
-//   }
-
-//   return (
-//     <div className="mt-10 ml-2">
-//       <button
-//         className="border border-black rounded-md px-2 py-1 mr-4 hover:bg-slate-400 transition-all ease-in-out"
-//         onClick={() => setTheme('dark')}
-//       >
-//         dark
-//       </button>
-//       <button
-//         className="border border-black rounded-md px-2 py-1 hover:bg-slate-400 transition-all ease-in-out"
-//         onClick={() => setTheme('light')}
-//       >
-//         light
-//       </button>
-//     </div>
-//   );
-// };
-
-// export default ThemeSwitcher;
-
 const Navbar = () => {
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();

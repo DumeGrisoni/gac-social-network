@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  body {
+    @apply !scrollbar-thumb-[#bebec2] !scrollbar-thin !scrollbar-track-[#bebec210];
+  }
+}
+
 body {
   color: #242526;
   background-color: #fff;
