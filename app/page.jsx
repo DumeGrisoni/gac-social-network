@@ -1,3 +1,11 @@
+import Categories from './Components/Categories';
+import ContentList from './Components/ContentList';
+
 export default function Home() {
-  return <div></div>;
+  return (
+    <div>
+      <Categories />
+      <ContentList />
+    </div>
+  );
 }

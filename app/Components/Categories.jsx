@@ -26,7 +26,7 @@ const Categories = () => {
     <div className="flex flex-col group">
       <ArrowLeftCircleIcon
         width={40}
-        className="absolute opacity-50 hover:opacity-100 cursor-pointer transition ease-in-out hidden z-10 mt-[22px] mr-20  lg:group-hover:block hover:scale-110"
+        className="absolute opacity-50 hover:opacity-100 cursor-pointer transition ease-in-out hidden z-10 mt-[22px]   lg:group-hover:block hover:scale-110"
         onClick={() => handleSlide('left')}
       />
       <div

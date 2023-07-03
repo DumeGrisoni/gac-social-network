@@ -25,7 +25,7 @@ const FriendsBar = () => {
         </div>
         <div className="hover:text-[#4B9AD4] transition ease-in-out cursor-pointer">
           <div className="flex gap-2">
-            <MinusCircleIcon width={24} className="text-red-500" />
+            <MinusCircleIcon width={24} className="text-red-500 min-w-[24px]" />
             <p className="truncate">Jean Rochemoutarde</p>
           </div>
         </div>
