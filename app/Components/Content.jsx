@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import { useState } from 'react';
 
-const Content = ({ src }) => {
+const Content = ({ src, artiste, title }) => {
   const [display, setDisplay] = useState(false);
 
   return (
@@ -14,8 +14,8 @@ const Content = ({ src }) => {
       {display && (
         <div className="absolute bottom-0  h-[50%] w-[100%] content-bg ">
           <div className="flex-col justify-center items-center text-center h-[100%] p-4">
-            <div className="mt-2 text-lg">Artiste</div>
-            <div className="text-sm">Titre</div>
+            <div className="mt-2 text-lg">{artiste}</div>
+            <div className="text-sm">{title}</div>
           </div>
         </div>
       )}
