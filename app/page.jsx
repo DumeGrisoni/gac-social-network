@@ -5,7 +5,8 @@ export default function Home() {
   return (
     <div>
       <Categories />
-      <ContentList />
+
+      <ContentList category />
     </div>
   );
 }

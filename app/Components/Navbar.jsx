@@ -30,49 +30,34 @@ const Navbar = () => {
   return (
     <div className="fixed inset-x-0 z-10 bottom-0 left-0 lg:top-0 lg:z-0 lg:w-[180px]">
       <nav className=" flex justify-between items-center p-[10px] h-[60px] w-[100vw]  shadow-md bg-2 lg:w-auto lg:h-[375px] lg:flex-col lg:justify-center lg:items-start lg:gap-[50px] lg:rounded-md lg:m-[10px] ">
-        <Link
-          href="/"
-          className="hover:text-[#4B9AD4] ease-in-out transition-all "
-        >
+        <Link href="/" className="nav-text ease-in-out transition-all ">
           <div className="flex gap-2 items-center justify-start">
             <HomeIcon width={24} />
-            <span className="hidden sm:flex">Acceuil</span>
+            <span className="hidden sm:flex">Accueil</span>
           </div>
         </Link>
 
-        <Link
-          href="/"
-          className="hover:text-[#4B9AD4] ease-in-out transition-all "
-        >
+        <Link href="/" className="nav-text ease-in-out transition-all ">
           <div className="flex gap-2 items-center justify-start">
             <UserIcon width={24} />
             <span className="hidden sm:flex">Profil</span>
           </div>
         </Link>
-        <Link
-          href="/"
-          className="hover:text-[#4B9AD4] ease-in-out transition-all "
-        >
+        <Link href="/" className="nav-text ease-in-out transition-all ">
           <div className="flex gap-2 items-center justify-start">
             <DocumentArrowUpIcon width={24} />
             <span className="hidden sm:flex">Publier</span>
           </div>
         </Link>
 
-        <Link
-          href="/"
-          className="hover:text-[#4B9AD4] ease-in-out transition-all "
-        >
+        <Link href="/" className="nav-text ease-in-out transition-all ">
           <div className="flex gap-2 items-center justify-start">
             <BellAlertIcon width={24} />
             <span className="hidden sm:flex">Notifications</span>
           </div>
         </Link>
 
-        <Link
-          href="/"
-          className="hover:text-[#4B9AD4] ease-in-out transition-all "
-        >
+        <Link href="/" className="nav-text ease-in-out transition-all ">
           {theme === 'dark' ? (
             <button
               className="flex gap-2 items-center justify-start"
