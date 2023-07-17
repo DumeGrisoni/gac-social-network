@@ -77,9 +77,9 @@ const Navbar = () => {
           )}
         </Link>
       </nav>
-      <nav className="hidden lg:block">
+      {/* <nav className="hidden lg:block">
         <FriendsBar />
-      </nav>
+      </nav> */}
     </div>
   );
 };
